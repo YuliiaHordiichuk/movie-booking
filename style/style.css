@@ -360,6 +360,7 @@ body {
 }
 
 .info__input {
+    opacity: 0;
     width: 0;
     height: 0;
 } 
@@ -448,6 +449,7 @@ body {
 
 .seats__input {
     appearance: none;
+    -webkit-appearance: none;
     width: 20px;
     height: 20px;
     border-radius: 5px;
@@ -478,6 +480,10 @@ body {
     outline: none; 
     background-color: var(--main-accent-color);
 }
+
+.seats__input:focus {
+    outline: 1px solid var(--main-accent-color);
+  }
 
 .seats-info {
     display: flex; 
